@@ -10,7 +10,9 @@
     "body-parser": "^1.20.2",
     "cors": "^2.8.5",
     "dotenv": "^8.2.0",
-    "express": "^4.17.1"
+    "express": "^4.17.1",
+    "mongodb": "^6.3.0",
+    "mongoose": "^8.1.2"
   },
   "license": "MIT"
 }
