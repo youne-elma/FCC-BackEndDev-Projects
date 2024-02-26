@@ -12,11 +12,13 @@ mongoose
 
 app.use(cors());
 app.use(express.static("public"));
+app.use(express.json());
+app.use(express.urlencoded({ extended: true }));
 app.get("/", (req, res) => {
   res.sendFile(__dirname + "/views/index.html");
 });
 
-const Routes = require("./Routes");
+const Routes = require("./PublicRoutes");
 app.use(Routes);
 
 const listener = app.listen(process.env.PORT || 3000, () => {
